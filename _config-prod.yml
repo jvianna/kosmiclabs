@@ -15,4 +15,4 @@ paginate_path: "/page:num"
 sass: 
   style: compressed
   deploy_style: compressed
-  compile_in_place: true
+  compile_in_place: false
