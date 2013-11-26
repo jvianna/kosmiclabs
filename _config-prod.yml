@@ -1,0 +1,18 @@
+exclude: ['README.md', 'Rakefile']
+markdown: rdiscount
+permalink: ':title'
+pygments: true
+safe: false
+
+url: http://www.kosmiclabs.com
+title: KosmicLabs | Thinking Beyond the Web
+description: "A collection of unpolished ideas and thoughts in the realms of front-end development, web design, entrepreneurship and startups."
+gosquared_key:
+
+paginate: 5
+paginate_path: "/page:num"
+
+sass: 
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: true

@@ -1,0 +1,56 @@
+{% for post in paginator.posts %}
+	<div class="post-container row {% if forloop.last %}last{% endif %}">
+		<div class="twelve columns">
+			<div class="row post-info">
+				<div class="twelve columns">
+					<a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
+				</div>
+				<div class="twelve columns">
+					<span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
+				</div>
+			</div>
+		</div>
+		<div class="tweve columns">
+			<div class="row">
+				<div class="twelve columns">
+					<div class="post-content">
+						{{ post.content }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+	<div class="pagination-container row">
+		<div class="three columns">
+			{% if paginator.previous_page %}
+				{% if paginator.previous_page == 1 %}
+					<a href="/" class="previous">&laquo; Previous</a>
+				{% else %}
+					<a href="/page{{ paginator.previous_page }}" class="previous">&laquo; Previous</a>
+				{% endif %}
+			{% else %}
+				<span class="previous disabled">&laquo; Previous</span>
+			{% endif %}
+		</div>
+		<div class="six columns">
+			<span class="current">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		</div>
+		<div class="three columns">
+			{% if paginator.next_page %}
+				<a href="/page{{ paginator.next_page }}" class="next">Next &raquo;</a>
+			{% else %}
+				<span class="next disabled">Next &raquo;</span>
+			{% endif %}
+		</div>
+	</div>
+{% else %}
+	<div class="pagination-container row">
+		<div class="six columns offset-by-three">
+			<span class="current">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		</div>
+	</div>
+{% endif %}

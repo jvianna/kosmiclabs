@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	{% include header.html %}
+</head>
+<body>  
+	<div class="background-container">
+		<div class="top-container">{% include top.html %}</div>
+		<div class="body-container">
+			<div class="single-post-container row">
+				<div class="twelve columns">
+					<div class="row post-info">
+						<div class="twelve columns">
+							<a href="{{ post.url }}"><h2 class="post-title">{{ page.title }}</h2></a>
+						</div>
+						<div class="twelve columns">
+							<span class="date">{{ page.date | date: "%-d %B %Y" }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="twelve columns">
+					<div class="row">
+						<div class="twelve columns">{{ content }}</div>
+					</div>
+				</div>
+				<div class="twelve columns">
+					<h1>comments</h2>
+				</div>
+			</div>
+		</div>
+		<div class="footer-container">{% include footer.html %}</div>
+	</div>
+</body>
+</html>
