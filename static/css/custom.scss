@@ -16,6 +16,14 @@ body, html {
 .top-container {
 	height: 300px;
 	background: transparent;
+	.header-logo {
+		display: inline-block;
+		width: 930px;
+		height: 230px;
+		background-image: url("../images/kosmiclabs_bg.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 }
 .body-container {
 	background: #FFF;
