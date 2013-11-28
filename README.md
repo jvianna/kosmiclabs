@@ -4,4 +4,5 @@ KosmicLabs
 Jekyll-based blog
 
 Plugins:
-- [Jekyll Sass](https://github.com/noct/jekyll-sass)
+- [Jekyll Assets](https://github.com/ixti/jekyll-assets)
+	- [Uglifier](https://github.com/lautis/uglifier)
