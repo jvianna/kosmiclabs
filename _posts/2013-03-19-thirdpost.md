@@ -1,6 +1,7 @@
 ---
 layout: single_post
 title: Hipster Third Post
+comments: true
 ---
 
 Hoodie in sartorial, sed cosby sweater ethnic gentrify. Deep v DIY organic flexitarian. Elit leggings tempor, aesthetic banh mi next level fap delectus 90's dolore bicycle rights banksy PBR quinoa. Pariatur occaecat iphone yr. Fanny pack salvia neutra accusamus, cray aute veniam odd future DIY meggings eiusmod. Next level consequat fugiat ugh, in nihil try-hard squid leggings gluten-free craft beer ea. Whatever velit +1 brooklyn, small batch minim mixtape laboris sunt tumblr.

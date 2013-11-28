@@ -1,6 +1,7 @@
 ---
 layout: single_post
 title: Goodbye Wordpress, Hello Jekyll
+comments: true
 ---
 
 For the longest time, I have been frustrated dealing with Wordpress and its bloated interface. Every time I attempt to start/restart blogging, I create a new theme, get it all ready, but as soon as I have to deal with the interface, a wave of disappointment comes crashing and I give up. After going through the same process several times, I told myself that I would refrain from setting up another blog because I would end up quitting again and waste a good amount of hours in the process. 
